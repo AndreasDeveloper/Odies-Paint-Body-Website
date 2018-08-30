@@ -29,17 +29,19 @@
         position: absolute;
         top: -3%;
         right: 32.5%;
+
+        // MEDIA QUERIES \\
+        @include respond(iphone) {
+           left: -10%;
+        }
+
+        @include respond(phone) {
+            right: 17%;
+        }
     }
 
     &__logo {
         height: 35rem;
-    }
-    
-
-    // * --- MEDIA QUERIES --- * \\
-    @include respond(phone) {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     }
 
     &__text-box {
@@ -50,10 +52,6 @@
         text-align: center;
 
         // * --- MEDIA QUERIES * --- \\
-        @include respond(lap-top) {
-            left: 35%;
-        }
-
         @include respond(tab-land) {
             position: absolute;
             left: 45%;
