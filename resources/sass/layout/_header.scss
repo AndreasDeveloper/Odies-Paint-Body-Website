@@ -27,12 +27,12 @@
 
     &__logo-box {
         position: absolute;
-        top: -2%;
-        right: 38%;
+        top: -3%;
+        right: 32.5%;
     }
 
     &__logo {
-        height: 25rem;
+        height: 35rem;
     }
     
 
@@ -48,5 +48,20 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+
+        // * --- MEDIA QUERIES * --- \\
+        @include respond(lap-top) {
+            left: 35%;
+        }
+
+        @include respond(tab-land) {
+            position: absolute;
+            left: 45%;
+        }
+
+        @include respond(phone) {
+            left: 50%;
+            text-align: center;
+        }
     }
 }

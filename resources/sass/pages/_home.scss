@@ -58,7 +58,7 @@
 /* SECTION TOURS | IN HOME PAGE
 /* ------------------------------------------- */
 
-.section-tours {
+.section-job {
     background-color: $color-grey-light-1;
     padding: 25rem 0 15rem 0;
     margin-top: -15rem;
@@ -67,17 +67,13 @@
     @include respond(tab-port) {
         padding: 20rem 0 10rem 0;
     }
-
-    &__button {
-        color: $color-primary;
-    }
 }
 
 /* ------------------------------------------- */
 /* SECTION BOOKING | IN HOME PAGE
 /* ------------------------------------------- */
 
-.section-booking {
+.section-contact {
     padding: 15rem 0;
     background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.895), rgba($color-primary-dark, 0.895));
     position: relative;
@@ -87,13 +83,9 @@
     @include respond(tab-port) {
         padding: 10rem 0;
     }
-
-    &__button {
-        color: $color-primary;
-    }
 }
 
-.booking {
+.contact {
     // SETUP THE "CLIP PATH" LIKE STYLE ON BOOKING FORM , WITHOUT USING THE CLIP PATH \\
     background-image: linear-gradient(105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 50%, transparent 50%), url(../images/header-2.jpg);
     background-size: 100%;
@@ -102,7 +94,7 @@
 
     // * --- MEDIA QUERIES FOR MAKING PICTURES RESPONSIVE --- * \\
     @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {   // and (min-width: 600px) is the breakpoint set which will display the content below. Everything above 600px will be applied in the content below \\
-        background-image: linear-gradient(105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 50%, transparent 50%) ,url(../images/nat-10.jpg);
+        background-image: linear-gradient(105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 50%, transparent 50%) ,url();
     }
 
     &__form {
@@ -116,7 +108,7 @@
 
     @include respond(tab-land) {
         // SETUP THE "CLIP PATH" LIKE STYLE ON BOOKING FORM , WITHOUT USING THE CLIP PATH \\
-      /*  background-image: linear-gradient(105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 65%, transparent 65%), url(../images/nat-10.jpg);
+      /*  background-image: linear-gradient(105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 65%, transparent 65%), url();
         background-size: cover; */
 
         &__form {
@@ -125,7 +117,7 @@
     }
 
     @include respond(tab-port) {
-        background-image: linear-gradient(to right, rgba($color-white, .9) 0%, rgba($color-white, .9) 100%), url(../images/nat-10.jpg);
+        background-image: linear-gradient(to right, rgba($color-white, .9) 0%, rgba($color-white, .9) 100%), url();
 
         &__form {
             width: 100%;

@@ -111,3 +111,13 @@
 .but-modified-4:hover::before {
     height: 360%;
 }
+
+
+// BUTTON IN JOBS SECTION \\
+.but-modified-more {
+    color: $color-primary;
+
+    &:hover {
+        color: $color-white;
+    }
+}

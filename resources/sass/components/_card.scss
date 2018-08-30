@@ -26,23 +26,24 @@
 
         // FRONT AND BACK \\
         &--front {
-            background-color: #fff
+            background-color: $color-white;
         }
 
         &--back {
+            border: .2rem solid $color-primary;
             transform: rotateY(180deg);
+            background-color: $color-grey-light-3;
 
             &-1 {
-                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
-                border: .2rem solid $color-primary;
+               
             }
 
             &-2 {
-                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+                
             }
 
             &-3 {
-                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+                
             }
         }
     }
@@ -149,7 +150,7 @@
     &__price-box {
         text-align: center;
         margin-bottom: 8rem;
-        color: $color-white;
+        color: $color-primary;
     }
 
     &__price-only {
@@ -160,6 +161,14 @@
     &__price-value {
         font-size: 6rem;
         font-weight: 100;
+    }
+
+    &__button {
+        color: $color-primary;
+
+        &:hover {
+            color: $color-white;
+        }
     }
 
     // * --- MEDIA QUERIES --- * \\
