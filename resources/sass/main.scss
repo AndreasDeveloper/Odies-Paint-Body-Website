@@ -7,16 +7,12 @@
 @import "abstracts/_mixins.scss";
 
 /* - BASE FOLDER FILES - */
-@import "base/_animations.scss";
 @import "base/_utilities.scss";
 @import "base/_typography.scss";
 @import "base/_base.scss";
 
 /* - COMPONENTS FOLDER FILES - */
 @import "components/_button.scss";
-@import "components/_card.scss";
-@import "components/_feature-box.scss";
-@import "components/_form.scss";
 
 /* - LAYOUT FOLDER FILES - */
 @import "layout/_grid.scss";
