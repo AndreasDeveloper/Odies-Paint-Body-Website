@@ -44,17 +44,29 @@
             left: 12%;
         }
 
-        @include respond(iphonex) {
-           left: 28%;
+        @include respond(note) {
+            left: 35%;
+        }
+
+        @include respond(note-port) {
+            left: 25%;
         }
 
         @include respond(phone) {
             right: 25%;
         }
+
+        @include respond(iphonex) {
+            left: 30%;
+         }
     }
 
     &__logo {
         height: 30rem;
         max-width: 100%;
+
+        @include respond(note) {
+            height: 20rem;
+        }
     }
 }

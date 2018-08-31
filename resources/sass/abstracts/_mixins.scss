@@ -76,6 +76,14 @@
         @media (max-width: 46em) { @content };  // 736px | Iphone 6,7 Landscape
     }
 
+    @if $breakpoint == note-port {
+        @media (max-width: 46.25em), (max-height: 22.5em) { @content };     // NOTE 8 PORTRAIT
+    }
+
+    @if $breakpoint == note {
+        @media (max-width: 22.5em), (max-height: 46.25em) { @content };     // NOTE 8
+    }
+
     @if $breakpoint == pixel2 {
         @media (max-width: 25.875em), (max-height: 51.4375em) { @content };     // Pixel 2 XL
     }
