@@ -28,11 +28,20 @@
     &__logo-box {
         position: absolute;
         top: -3%;
-        right: 32.5%;
+        right: 35%;
+        max-width: 100%;
 
         // MEDIA QUERIES \\
+        @include respond(lap-top-2) {
+            left: 35%;
+        }
+
+        @include respond(tab-port) {
+            left: 35%;
+        }
+
         @include respond(iphone) {
-           left: -10%;
+           left: 18%;
         }
 
         @include respond(phone) {
@@ -41,25 +50,7 @@
     }
 
     &__logo {
-        height: 35rem;
-    }
-
-    &__text-box {
-        position: absolute;
-        top: 91%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-
-        // * --- MEDIA QUERIES * --- \\
-        @include respond(tab-land) {
-            position: absolute;
-            left: 45%;
-        }
-
-        @include respond(phone) {
-            left: 50%;
-            text-align: center;
-        }
+        height: 30rem;
+        max-width: 100%;
     }
 }
