@@ -76,8 +76,8 @@
         @media (max-width: 46em) { @content };  // 736px | Iphone 6,7 Landscape
     }
 
-    @if $breakpoint == note-port {
-        @media (max-width: 46.25em), (max-height: 22.5em) { @content };     // NOTE 8 PORTRAIT
+    @if $breakpoint == note-land {
+        @media (max-width: 46.25em), (max-height: 22.5em) { @content };     // NOTE 8 LANDSACPE
     }
 
     @if $breakpoint == note {
