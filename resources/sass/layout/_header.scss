@@ -28,7 +28,7 @@
     &__logo-box {
         position: absolute;
         top: -3%;
-        right: 51.5%;
+        right: 53.5%;
         max-width: 100%;
 
         // MEDIA QUERIES \\
@@ -45,11 +45,11 @@
         }
 
         @include respond(notebook) {
-            left: 30%;
+            left: 15%;
         }
 
         @include respond(phone) {
-            right: 88%;
+            right: 89%;
         }
 
         @include respond(iphonex) {
@@ -65,12 +65,17 @@
         @include respond(lap-top) {
             max-width: 100%;
             max-height: 100%;
-            margin-left: 57%;
+            margin-left: 60%;
+        }
+
+        @include respond(tab-port) {
+            max-height: 35rem;
+            max-width: 35rem;
         }
 
         @include respond(note) {
-            max-height: 800%;
-            max-width: 800%;
+            max-height: 900%;
+            max-width: 900%;
         }
 
         @include respond(note-land) {

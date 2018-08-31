@@ -293,7 +293,7 @@ body {
   .header__logo-box {
     position: absolute;
     top: -3%;
-    right: 51.5%;
+    right: 53.5%;
     max-width: 100%; }
     @media (max-width: 75em) {
       .header__logo-box {
@@ -306,10 +306,10 @@ body {
         right: 50%; } }
     @media (max-width: 64em), (max-height: 50em) {
       .header__logo-box {
-        left: 30%; } }
+        left: 15%; } }
     @media (max-width: 37.5em) {
       .header__logo-box {
-        right: 88%; } }
+        right: 89%; } }
     @media (max-width: 23.435em), (max-height: 50.75em) {
       .header__logo-box {
         left: 1%; } }
@@ -320,11 +320,15 @@ body {
       .header__logo {
         max-width: 100%;
         max-height: 100%;
-        margin-left: 57%; } }
+        margin-left: 60%; } }
+    @media (max-width: 56.25em) {
+      .header__logo {
+        max-height: 35rem;
+        max-width: 35rem; } }
     @media (max-width: 22.5em), (max-height: 46.25em) {
       .header__logo {
-        max-height: 800%;
-        max-width: 800%; } }
+        max-height: 900%;
+        max-width: 900%; } }
     @media (max-width: 46.25em), (max-height: 22.5em) {
       .header__logo {
         margin-left: 55%;
