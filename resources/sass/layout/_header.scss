@@ -40,8 +40,8 @@
             left: 35%;
         }
 
-        @include respond(iphone) {
-           left: 18%;
+        @include respond(iphonex) {
+           left: 15%;
         }
 
         @include respond(phone) {
