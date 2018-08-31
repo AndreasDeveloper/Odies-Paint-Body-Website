@@ -45,11 +45,11 @@
         }
 
         @include respond(iphonex) {
-           left: 15%;
+           left: 28%;
         }
 
         @include respond(phone) {
-            right: 17%;
+            right: 25%;
         }
     }
 
