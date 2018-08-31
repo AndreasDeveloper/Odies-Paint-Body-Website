@@ -33,11 +33,15 @@
 
         // MEDIA QUERIES \\
         @include respond(lap-top-2) {
-            left: 35%;
+            left: 36%;
         }
 
         @include respond(tab-port) {
             left: 35%;
+        }
+
+        @include respond(pixel2) {
+            left: 12%;
         }
 
         @include respond(iphonex) {

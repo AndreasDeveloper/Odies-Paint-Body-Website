@@ -76,6 +76,10 @@
         @media (max-width: 46em) { @content };  // 736px | Iphone 6,7 Landscape
     }
 
+    @if $breakpoint == pixel2 {
+        @media (max-width: 25.875em), (max-height: 51.4375em) { @content };     // Pixel 2 XL
+    }
+
     @if $breakpoint == iphonex {
         @media (max-width: 23.435em), (max-height: 50.75em) { @content };   // Iphone X
     }
@@ -86,6 +90,10 @@
 
     @if $breakpoint == phone {
         @media (max-width: 37.5em) { @content };    // 600px
+    }
+
+    @if $breakpoint == ipad-p {
+        @media (max-width: 64em), (max-height: 85.375em) { @content };  // Ipad Pro
     }
 
     @if $breakpoint == ipad {

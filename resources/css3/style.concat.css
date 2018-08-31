@@ -444,3 +444,481 @@
   content: "\e028";
 }
 
+/* ------------------------------------------- */
+/* 7-1 TYPE FOLDER / FILES IMPLEMENTATION
+/* ------------------------------------------- */
+/* - ABSTRACTS FOLDER FILES - */
+/* ------------------------------------------- */
+/* COLOR VARIABLES
+/* ------------------------------------------- */
+/* FOR THE FORM */
+/* GREY SHADES */
+/* B & W */
+/* COLORS FOR SECTIONS BACKGROUNDS */
+/* -- BORDER RADIUS  -- */
+/* ------------------------------------------- */
+/* GRID VARIABLES
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* FONT
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* CLAERFIX MIXIN FOR THE GRID
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* MIXIN THAT CENTERS THE ELEMENTS TO VH
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* CENTERS THE BUTTONS
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* MEDIA QUERY MANAGER
+/* ------------------------------------------- */
+/* // SIZES / DEVICES \\
+    0 - 600px > Phone
+    600 - 900px > Tablet Portrait
+    900 - 1200px > Tablet Landscape
+    [1200 - 18009 is where our normal style apply
+    1800px + >Big Desktop
+
+    1em = 16px - KIM
+*/
+/* // BREAKPOINT NAMES \\
+    $breakpoint argument choices:
+    - phone
+    - tab-port
+    - tab-land
+    - big-desktop
+*/
+/* - BASE FOLDER FILES - */
+/* ---------------------------------------------------------- */
+/* U-CENTER-TEXT CLASS IN ABOUT SECTION | CENTERING THE TEXT
+/* ---------------------------------------------------------- */
+.u-center-text {
+  text-align: center !important; }
+
+/* ---------------------------------------------------------- */
+/* U-MARGIN-BOTTOM-SMALL CLASS IN ABOUT SECTION | POSITION THE TEXT
+/* ---------------------------------------------------------- */
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+/* ---------------------------------------------------------- */
+/* U-MARGIN-BOTTOM-MEDIUM CLASS IN ABOUT SECTION | POSITION THE TEXT
+/* ---------------------------------------------------------- */
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 3rem !important; } }
+
+/* ---------------------------------------------------------- */
+/* U-MARGIN-BOTTOM-BIG CLASS IN ABOUT SECTION | POSITION THE TEXT
+/* ---------------------------------------------------------- */
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-big {
+      margin-bottom: 5rem !important; } }
+
+/* ---------------------------------------------------------- */
+/* U-MARGIN-TOP-SMALL CLASS IN TOURS SECTION | POSITION THE TEXT
+/* ---------------------------------------------------------- */
+.u-margin-top-small {
+  margin-top: 2rem !important; }
+
+/* ---------------------------------------------------------- */
+/* U-MARGIN-TOP-BIG CLASS IN TOURS SECTION | POSITION THE TEXT
+/* ---------------------------------------------------------- */
+.u-margin-top-medium {
+  margin-top: 5rem !important; }
+
+/* ---------------------------------------------------------- */
+/* U-MARGIN-TOP-BIG CLASS IN TOURS SECTION | POSITION THE TEXT
+/* ---------------------------------------------------------- */
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+/* ---------------------------------------------------------- */
+/* U-MARGIN-TOP-HUGE CLASS IN TOURS SECTION | POSITION THE TEXT
+/* ---------------------------------------------------------- */
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
+
+/* ------------------------------------------- */
+/* BODY TYPOGRAHPY SETUP
+/* ------------------------------------------- */
+body {
+  font-family: 'Lato', 'Arial', 'sans-serif';
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+  color: #777; }
+
+/* ------------------------------------------- */
+/* HEADING PRIMARY | TEXT / STYLE H1
+/* ------------------------------------------- */
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem; }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    /* -- ANIMATION IMPLEMENTATION -- */
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out; }
+    @media (max-width: 37.5em) {
+      .heading-primary--main {
+        letter-spacing: 1rem;
+        font-size: 5rem; } }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    /* -- ANIMATION IMPLEMENTATION -- */
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out; }
+    @media (max-width: 37.5em) {
+      .heading-primary--sub {
+        letter-spacing: .5rem; } }
+
+/* ------------------------------------------- */
+/* HEADING SECONDARY | TEXT / STYLE H2
+/* ------------------------------------------- */
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #e95a4b, #c0392b);
+  -webkit-background-clip: text;
+  color: transparent;
+  /*letter-spacing: .2rem;
+    transition: all .2s; */
+  /*
+    &:hover {
+        transform: skewY(2deg);
+    } */ }
+  @media (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 3rem; } }
+  @media (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
+
+/* --------------------------------------------- */
+/* HEADING TERTIARY + PARAGRAPH| TEXT / STYLE H3/P
+/* --------------------------------------------- */
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+  @media (max-width: 37.5em) {
+    .heading-tertiary {
+      text-align: center; } }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+/* ------------------------------------------------ */
+/* HEADING SECONDARY BOX EFFECT | FEATURES SECTION
+/* ------------------------------------------------ */
+.section-features__heading {
+  padding: 1.2rem;
+  transition: all 500ms;
+  position: relative; }
+
+/* ------------------------------------------- */
+/* BASIC SETUP
+/* ------------------------------------------- */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  /* DEFINES WHAT REM IS */
+  font-size: 62.5%;
+  /* Takes 62.5% of the default font size (16px). 100 / 16 = 62.5  */
+  /* || 1rem = 10px; 10px/16px = 62.5% || */ }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box;
+  /*padding: 3rem;  /* Gives padding all around the body element, making white space on the sides. */ }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
+
+/* - COMPONENTS FOLDER FILES - */
+/* ------------------------------------------- */
+/* BUTTON TEXT | 
+/* ------------------------------------------- */
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: #e74c3c;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #e74c3c;
+  padding: 3px;
+  transition: all .2s;
+  position: relative; }
+
+.btn-text:hover {
+  background-color: #e74c3c;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
+
+@media (max-width: 37.5em) {
+  .btn-text {
+    position: absolute;
+    top: 0;
+    left: 9.5rem; } }
+
+/* ------------------------------------------- */
+/* BUTTON MODIFIED | HEADER | BUT CLASS
+/* ------------------------------------------- */
+/* --- BUT CLASS SETUP GENERAL --- */
+.but {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-size: 1.4rem;
+  font-family: 'Lato';
+  text-decoration: none;
+  margin: 3rem 0;
+  border: 0.2rem solid #e74c3c;
+  padding: 1.5rem 6rem;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: all 1s ease; }
+
+.but::before {
+  content: "";
+  background: #e74c3c;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease; }
+
+/* --- BUTTON'S ACTUAL SETUP --- */
+.but-modified::before {
+  width: 0;
+  height: 100%; }
+
+.but-modified:hover::before {
+  width: 100%; }
+
+.but-modified-2::before {
+  width: 100%;
+  height: 0; }
+
+.but-modified-2:hover::before {
+  height: 100%; }
+
+.but-modified-3::before {
+  width: 100%;
+  height: 0;
+  transform: translate(-50%, -50%) rotate(45deg); }
+
+.but-modified-3:hover::before {
+  height: 360%; }
+
+.but-modified-4::before {
+  width: 100%;
+  height: 0;
+  transform: translate(-50%, -50%) rotate(-45deg); }
+
+.but-modified-4:hover::before {
+  height: 360%; }
+
+.but-modified-more {
+  color: #e74c3c; }
+  .but-modified-more:hover {
+    color: #fff; }
+
+/* - LAYOUT FOLDER FILES - */
+/* ------------------------------------------- */
+/* CUSTOM GRID FLOAT SYSTEM
+/* ------------------------------------------- */
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+      @media (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc( 2 * ((100% - 3 * 6rem) / 3) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc( 3 * ((100% - 3 * 6rem) / 3) + 2 * 6rem); }
+
+/* ------------------------------------------- */
+/* HEADER
+/* ------------------------------------------- */
+.header {
+  height: 105vh;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/header-2.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  overflow: hidden;
+  /*  @supports(clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(50% 0, 100% 0, 100% 79%, 50% 100%, 0 83%, 0 0);
+        clip-path: polygon(50% 0, 100% 0, 100% 79%, 50% 100%, 0 83%, 0 0);  
+        height: 95vh;
+    } */
+  /* @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), 
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),  // SAFARI SUPPORT IMPLEMENTATION
+        only screen and (min-width: 125em) {   // and (min-width: 600px) is the breakpoint set which will display the content below. Everything above 600px will be applied in the content below \\
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.600), rgba($color-primary-dark, 0.600)) ,url(../images/header-4-small.jpg);
+        } */ }
+  .header__logo-box {
+    position: absolute;
+    top: -3%;
+    right: 35%;
+    max-width: 100%; }
+    @media (max-width: 81.875em) {
+      .header__logo-box {
+        left: 36%; } }
+    @media (max-width: 56.25em) {
+      .header__logo-box {
+        left: 35%; } }
+    @media (max-width: 25.875em), (max-height: 51.4375em) {
+      .header__logo-box {
+        left: 12%; } }
+    @media (max-width: 23.435em), (max-height: 50.75em) {
+      .header__logo-box {
+        left: 15%; } }
+    @media (max-width: 37.5em) {
+      .header__logo-box {
+        right: 17%; } }
+  .header__logo {
+    height: 30rem;
+    max-width: 100%; }
+
+/* ------------------------------------------- */
+/* FOOTER
+/* ------------------------------------------- */
+.footer {
+  background-color: #000;
+  padding: 10rem;
+  font-size: 1.4rem;
+  color: #f7f7f7; }
+  .footer__page {
+    position: relative;
+    margin-top: -4rem;
+    margin-right: -20%;
+    max-width: 100%; }
+    @media (max-width: 75em) {
+      .footer__page {
+        padding-top: 20rem; } }
+    @media (max-width: 56.25em) {
+      .footer__page {
+        padding-top: 30rem; } }
+    @media (max-width: 25.875em), (max-height: 46em) {
+      .footer__page {
+        margin-right: -15%; } }
+  .footer__logo {
+    height: 35rem;
+    max-width: 100%; }
+  @media (max-width: 56.25em) {
+    .footer {
+      padding: 8rem 0; } }
+
+/* - PAGES FOLDER FILES - */
+/* ------------------------------------------- */
+/* SECTION ABOUT | IN HOME PAGE
+/* ------------------------------------------- */
+.section-about {
+  background-color: #f7f7f7;
+  padding: 15rem 0 15rem 0;
+  margin-top: -20vh; }
+  .section-about__header-3 {
+    text-align: center;
+    font-size: 1.9rem; }
+  .section-about__paragraph {
+    text-align: center;
+    font-size: 1.7rem;
+    padding-bottom: 15rem; }
+  .section-about__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%; }
+    .section-about__button:hover {
+      background-color: #e74c3c;
+      color: #fff;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      transform: translateY(-2px);
+      transform: translate(-50%, -50%); }
+    .section-about__button:active {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      transform: translateY(0);
+      transform: translate(-50%, -50%); }
+  @media (max-width: 56.25em) {
+    .section-about {
+      padding: 25rem 0 0 0; } }
+  @media (max-width: 64em), (max-height: 85.375em) {
+    .section-about {
+      padding: 30rem 0 0 0; } }
+  @media (max-width: 37.5em) {
+    .section-about {
+      padding: 15rem 0 0 0; } }
